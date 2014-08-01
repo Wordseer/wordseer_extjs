@@ -92,7 +92,7 @@ Ext.define('WordSeer.controller.BreadCrumbsController', {
     to which to add the {@link WordSeer.view.search.BreadCrumb}s.
     */
     setBreadCrumbsForFormValues: function(panel, formValues) {
-        panel.getEl().down('div.breadcrumbs').update('');
+		panel.getEl().down('div.breadcrumbs').update('');
         panel.getLayoutPanelModel().breadcrumbs = [];
         var breadcrumbs = [];
         // Add the search breadcrumbs.

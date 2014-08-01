@@ -181,8 +181,10 @@ Ext.define('WordSeer.controller.SearchController', {
 					Ext.apply(formValues, values);
 				}
 			}
-			if ((formValues.widget_xtype == 'column-vis-widget'
-				|| formValues.widget_xtype == 'word-frequencies-widget')) {
+			if (!was_metadata_search) {
+				// TODO: logically this should work, but the PHP API doesn't
+				// seem to handle multiple search values. make sure the Python
+				// implementation does
 				formValues.search.push(values);
 			} else {
 				if (was_metadata_search) {
