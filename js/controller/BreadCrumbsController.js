@@ -92,13 +92,16 @@ Ext.define('WordSeer.controller.BreadCrumbsController', {
     to which to add the {@link WordSeer.view.search.BreadCrumb}s.
     */
     setBreadCrumbsForFormValues: function(panel, formValues) {
-        panel.getEl().down('div.breadcrumbs').update('');
-        panel.getLayoutPanelModel().breadcrumbs = [];
+        // clear each breadcrumb group
+		panel.getEl().select('div.breadcrumbs .crumbs').each(function(el){
+			el.update('');
+		});
+		panel.getLayoutPanelModel().breadcrumbs = [];
         var breadcrumbs = [];
 		var color_index = 0;
         // Add the search breadcrumbs.
 		if (formValues.search) {
-            for (var i = 0; i < formValues.search.length; i++) {
+			for (var i = 0; i < formValues.search.length; i++) {
                 breadcrumbs.push(
                     this.addSearchBreadCrumb(formValues.search[i], color_index,
                         formValues.widget_xtype));
@@ -130,10 +133,22 @@ Ext.define('WordSeer.controller.BreadCrumbsController', {
             }
         }
         var breadcrumbs_pane = panel.getEl().down('div.breadcrumbs');
-        breadcrumbs.forEach(function(domHelper, index) {
-            domHelper.index = index;
+		breadcrumbs.forEach(function(domHelper, index) {
+			domHelper.index = index;
             domHelper.panel_id = panel.id;
-            breadcrumbs_pane.appendChild(domHelper);
+			var bctype = domHelper.breadcrumb_class;
+			// phrase, collection, metadata, else search
+			switch (bctype) {
+				case 'phrase':
+					breadcrumbs_pane.down('.phrases .crumbs').appendChild(domHelper);
+					break;
+				case 'metadata':
+					breadcrumbs_pane.down('.metadata .crumbs').appendChild(domHelper);
+					break;
+				default: // search
+					breadcrumbs_pane.down('.search .crumbs').appendChild(domHelper);
+					break;
+			}
         });
         panel.getLayoutPanelModel().breadcrumbs = breadcrumbs;
         breadcrumbs_pane.select('span.breadcrumb').each(function(el) {

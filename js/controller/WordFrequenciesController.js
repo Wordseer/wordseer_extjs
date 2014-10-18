@@ -336,7 +336,6 @@ Ext.define('WordSeer.controller.WordFrequenciesController', {
 				});
 
 				svg.call(chart);
-				debugger;
 				// fade out overflowing labels
 				svg.append("linearGradient")
 			      .attr("id", "fadeToWhiteY")

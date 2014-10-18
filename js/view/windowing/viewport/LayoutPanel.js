@@ -105,7 +105,49 @@ Ext.define('WordSeer.view.windowing.viewport.LayoutPanel',  {
                 {
                     tag:'div',
                     cls:'breadcrumbs',
-                    children:[],
+                    children:[{
+						tag: 'div',
+						cls: 'search group',
+						children: [
+							{
+								tag: 'div',
+								cls: 'label',
+								html: 'search terms'
+							},
+							{
+								tag: 'div',
+								cls: 'crumbs'
+							}
+						],
+					},{
+						tag: 'div',
+						cls: 'phrases group',
+						children: [
+							{
+								tag: 'div',
+								cls: 'label',
+								html: 'co-occurring term filters'
+							},
+							{
+								tag: 'div',
+								cls: 'crumbs'
+							}
+						]
+					},{
+						tag: 'div',
+						cls: 'metadata group',
+						children: [
+							{
+								tag: 'div',
+								cls: 'label',
+								html: 'metadata filters'
+							},
+							{
+								tag: 'div',
+								cls: 'crumbs'
+							}
+						],
+					}],
                 },
                 {
                     tag: 'div',

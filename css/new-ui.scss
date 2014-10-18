@@ -382,7 +382,7 @@ div.panel {
 	padding: $panel-padding;
 	div.panel-render-target {
 		position:absolute;
-		top: $panel-header-height + $breadcrumbs-height;
+		top: $panel-header-height + $breadcrumbs-height + 16;
 		left: $panel-padding;
 		right: $panel-padding;
 		bottom: $panel-margin;
@@ -445,15 +445,29 @@ div.panelheader {
 }
 
 div.breadcrumbs {
-	height: $breadcrumbs-height;
+	height: $breadcrumbs-height + 16;
 	width: 100%;
 	@include panel-inner;
 	padding-left: $panel-margin;
 	padding-top:$panel-margin;
 
-	span.breadcrumb {
+	.group {
+        float: left;
+        margin: 0 15px 0 0;
+        border-left: 1px solid #000000;
+        padding-left: 5px;
+        height: $breadcrumbs-height;
+
+        .label {
+            font-family: $sans-serif-alt;
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+    }
+
+    span.breadcrumb {
 		float: left;
-		min-height: $breadcrumbs-height - 3*$panel-padding;
+		min-height: $breadcrumbs-height - 6*$panel-padding;
 		@include border-radius($default-border-radius);
 		background-color: $gray;
 		font-weight: bold;
