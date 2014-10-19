@@ -460,8 +460,31 @@ div.breadcrumbs {
 
         .label {
             font-family: $sans-serif-alt;
+            font-weight: normal;
             font-size: 9px;
             margin-bottom: 3px;
+        }
+
+        .conj {
+            float: left;
+            padding: 5px;
+            border-radius: 20px;
+            width: 33px;
+            height: 33px;
+            line-height: 22px;
+            font-family: $sans-serif-alt;
+            font-size: 10px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 9px 8px 0 0;
+
+            &.and {
+                background-color: #bc80bd;
+            }
+            &.or {
+                background-color: #ccebc5;
+            }
         }
     }
 

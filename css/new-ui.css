@@ -460,10 +460,34 @@ div.breadcrumbs .group {
 /* line 461, new-ui.scss */
 div.breadcrumbs .group .label {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 9px;
   margin-bottom: 3px;
 }
 /* line 468, new-ui.scss */
+div.breadcrumbs .group .conj {
+  float: left;
+  padding: 5px;
+  border-radius: 20px;
+  width: 33px;
+  height: 33px;
+  line-height: 22px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 9px 8px 0 0;
+}
+/* line 482, new-ui.scss */
+div.breadcrumbs .group .conj.and {
+  background-color: #bc80bd;
+}
+/* line 485, new-ui.scss */
+div.breadcrumbs .group .conj.or {
+  background-color: #ccebc5;
+}
+/* line 491, new-ui.scss */
 div.breadcrumbs span.breadcrumb {
   float: left;
   min-height: 57.576px;
@@ -479,20 +503,20 @@ div.breadcrumbs span.breadcrumb {
   min-width: 100px;
   margin-right: 7.68px;
 }
-/* line 478, new-ui.scss */
+/* line 501, new-ui.scss */
 div.breadcrumbs span.breadcrumb span.breadcrumb-contents {
   display: inline-block;
   width: 80%;
   padding-right: 7.68px;
 }
-/* line 482, new-ui.scss */
+/* line 505, new-ui.scss */
 div.breadcrumbs span.breadcrumb span.breadcrumb-contents span.relation, div.breadcrumbs span.breadcrumb span.breadcrumb-contents span.property {
   font-weight: normal;
   width: 100%;
   display: block;
   font-size: 10px;
 }
-/* line 489, new-ui.scss */
+/* line 512, new-ui.scss */
 div.breadcrumbs span.breadcrumb span.breadcrumb-controls {
   float: right;
   clear: right;
@@ -501,7 +525,7 @@ div.breadcrumbs span.breadcrumb span.breadcrumb-controls {
   z-index: 100;
 }
 
-/* line 500, new-ui.scss */
+/* line 523, new-ui.scss */
 span.breadcrumb-close {
   float: right;
   clear: right;
@@ -513,7 +537,7 @@ span.breadcrumb-close {
   background-repeat: no-repeat;
 }
 
-/* line 500, new-ui.scss */
+/* line 523, new-ui.scss */
 span.breadcrumb-toggle-on {
   float: right;
   clear: right;
@@ -525,7 +549,7 @@ span.breadcrumb-toggle-on {
   background-repeat: no-repeat;
 }
 
-/* line 500, new-ui.scss */
+/* line 523, new-ui.scss */
 span.breadcrumb-toggle-off {
   float: right;
   clear: right;
@@ -537,91 +561,91 @@ span.breadcrumb-toggle-off {
   background-repeat: no-repeat;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-move {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-move.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-move[enabled=false], span.nav-button-move.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-save {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-save.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-save[enabled=false], span.nav-button-save.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-close {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-close.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-close[enabled=false], span.nav-button-close.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-back {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-back.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-back[enabled=false], span.nav-button-back.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-forward {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-forward.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-forward[enabled=false], span.nav-button-forward.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 515, new-ui.scss */
+/* line 538, new-ui.scss */
 span.nav-button-pinned {
   float: right;
   margin: 3px;
   background-image: url("icons/nav-button-pinned.png");
   background-repeat: no-repeat;
 }
-/* line 523, new-ui.scss */
+/* line 546, new-ui.scss */
 span.nav-button-pinned[enabled=false], span.nav-button-pinned.disabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
   cursor: default;
 }
 
-/* line 537, new-ui.scss */
+/* line 560, new-ui.scss */
 span.switch-button {
   width: 10.8px;
   height: 10.8px;
@@ -631,33 +655,33 @@ span.switch-button {
   background-image: url("icons/switch-button.png");
   background-repeat: no-repeat;
 }
-/* line 548, new-ui.scss */
+/* line 571, new-ui.scss */
 span.switch-button:hover {
   background-image: url("icons/switch-button-hover.png");
   background-repeat: no-repeat;
 }
-/* line 554, new-ui.scss */
+/* line 577, new-ui.scss */
 span.switch-button.invisible {
   display: none;
 }
 
-/* line 559, new-ui.scss */
+/* line 582, new-ui.scss */
 span.word:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-/* line 563, new-ui.scss */
+/* line 586, new-ui.scss */
 span.menu-word {
   background-color: #f7d04a;
 }
 
-/* line 566, new-ui.scss */
+/* line 589, new-ui.scss */
 span.word.search {
   background-color: #fffaa5;
 }
 
-/* line 569, new-ui.scss */
+/* line 592, new-ui.scss */
 span.word.match {
   background-color: #FFDAB9;
 }
@@ -665,26 +689,26 @@ span.word.match {
 /*******************************************************************************
 Base Components: Overlay
 *******************************************************************************/
-/* line 577, new-ui.scss */
+/* line 600, new-ui.scss */
 div.overlay {
   padding: 7.68px;
   position: absolute;
   width: 400px;
   background-color: white;
 }
-/* line 582, new-ui.scss */
+/* line 605, new-ui.scss */
 div.overlay div.overlay-render-target {
   width: 100%;
   height: 100%;
 }
-/* line 586, new-ui.scss */
+/* line 609, new-ui.scss */
 div.overlay span.nav-button-pinned, div.overlay span.nav-button-close {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10000;
 }
-/* line 592, new-ui.scss */
+/* line 615, new-ui.scss */
 div.overlay span.overlay-title {
   font-family: "Bitter";
   font-weight: 300;
@@ -694,32 +718,32 @@ div.overlay span.overlay-title {
   top: 7.68px;
   left: 28.68px;
 }
-/* line 602, new-ui.scss */
+/* line 625, new-ui.scss */
 div.overlay div.x-accordion-layout-ct {
   margin-top: 22px;
 }
-/* line 605, new-ui.scss */
+/* line 628, new-ui.scss */
 div.overlay div.x-accordion-layout-ct .x-accordion-item .x-accordion-hd {
   height: 24px;
   background-color: #f7d04a;
   border: none;
   transition: background-color 0.2s;
 }
-/* line 612, new-ui.scss */
+/* line 635, new-ui.scss */
 div.overlay div.x-accordion-layout-ct .x-accordion-item .x-accordion-hd .x-tool {
   display: none;
 }
-/* line 621, new-ui.scss */
+/* line 644, new-ui.scss */
 div.overlay div.x-accordion-layout-ct .x-accordion-item .x-accordion-hd .x-tool img {
   display: none;
 }
-/* line 626, new-ui.scss */
+/* line 649, new-ui.scss */
 div.overlay div.x-accordion-layout-ct .x-accordion-item .x-accordion-hd .x-panel-header-text-container {
   font-family: "Bitter", serif;
   font-size: 14px;
   font-weight: bold;
 }
-/* line 633, new-ui.scss */
+/* line 656, new-ui.scss */
 div.overlay div.x-accordion-layout-ct .x-accordion-item.x-collapsed .x-accordion-hd {
   background-color: #eeeeee;
 }
@@ -727,24 +751,24 @@ div.overlay div.x-accordion-layout-ct .x-accordion-item.x-collapsed .x-accordion
 /*******************************************************************************
 Derived Components: FrequentWordsList
 *******************************************************************************/
-/* line 661, new-ui.scss */
+/* line 684, new-ui.scss */
 div.frequent-words-list {
   float: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/* line 649, new-ui.scss */
+/* line 672, new-ui.scss */
 div.frequent-words-list table.table tbody {
   overflow: auto;
   display: block;
   height: 350;
   width: 360;
 }
-/* line 655, new-ui.scss */
+/* line 678, new-ui.scss */
 div.frequent-words-list table.table thead > tr {
   display: block;
 }
 
-/* line 667, new-ui.scss */
+/* line 690, new-ui.scss */
 td.frequent-word-word {
   min-width: 120px;
   max-width: 120px;
@@ -753,31 +777,31 @@ td.frequent-word-word {
   color: #64839f;
 }
 
-/* line 674, new-ui.scss */
+/* line 697, new-ui.scss */
 td.frequent-word-count {
   min-width: 60px;
   padding-right: 7.68px;
 }
-/* line 677, new-ui.scss */
+/* line 700, new-ui.scss */
 td.frequent-word-count svg.lollipop {
   width: 100px;
   height: 17px;
 }
-/* line 680, new-ui.scss */
+/* line 703, new-ui.scss */
 td.frequent-word-count svg.lollipop line {
   stroke: #ababab;
 }
-/* line 683, new-ui.scss */
+/* line 706, new-ui.scss */
 td.frequent-word-count svg.lollipop circle {
   fill: #ababab;
 }
 
-/* line 689, new-ui.scss */
+/* line 712, new-ui.scss */
 th.frequent-word-word {
   min-width: 120px;
 }
 
-/* line 692, new-ui.scss */
+/* line 715, new-ui.scss */
 th.frequent-word-count {
   min-width: 60px;
   padding-right: 7.68px;
@@ -787,14 +811,14 @@ th.frequent-word-count {
 /*******************************************************************************
 Derived Components: RelatedWordsList
 *******************************************************************************/
-/* line 649, new-ui.scss */
+/* line 672, new-ui.scss */
 div.related-words-list table.table tbody {
   overflow: auto;
   display: block;
   height: 300px;
   width: 220px;
 }
-/* line 655, new-ui.scss */
+/* line 678, new-ui.scss */
 div.related-words-list table.table thead > tr {
   display: block;
 }
@@ -802,52 +826,52 @@ div.related-words-list table.table thead > tr {
 /*******************************************************************************
 Derived Components: Treepanel
 *******************************************************************************/
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='1'] td.content:nth-of-type(1) {
   padding-left: 7.68px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='2'] td.content:nth-of-type(1) {
   padding-left: 15.36px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='3'] td.content:nth-of-type(1) {
   padding-left: 23.04px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='4'] td.content:nth-of-type(1) {
   padding-left: 30.72px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='5'] td.content:nth-of-type(1) {
   padding-left: 38.4px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='6'] td.content:nth-of-type(1) {
   padding-left: 46.08px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='7'] td.content:nth-of-type(1) {
   padding-left: 53.76px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='8'] td.content:nth-of-type(1) {
   padding-left: 61.44px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='9'] td.content:nth-of-type(1) {
   padding-left: 69.12px;
 }
 
-/* line 712, new-ui.scss */
+/* line 735, new-ui.scss */
 tr[level='10'] td.content:nth-of-type(1) {
   padding-left: 76.8px;
 }
@@ -855,14 +879,14 @@ tr[level='10'] td.content:nth-of-type(1) {
 /*******************************************************************************
 Derived Components: Set List
 *******************************************************************************/
-/* line 649, new-ui.scss */
+/* line 672, new-ui.scss */
 div.sets-list table.table tbody {
   overflow: auto;
   display: block;
   height: 150px;
   width: 400px;
 }
-/* line 655, new-ui.scss */
+/* line 678, new-ui.scss */
 div.sets-list table.table thead > tr {
   display: block;
 }
@@ -870,30 +894,30 @@ div.sets-list table.table thead > tr {
 /*******************************************************************************
 Base Components: MultiTable
 *******************************************************************************/
-/* line 730, new-ui.scss */
+/* line 753, new-ui.scss */
 ul.multitable {
   margin: 0px;
   padding: 0px;
 }
-/* line 734, new-ui.scss */
+/* line 757, new-ui.scss */
 ul.multitable li {
   list-style-type: none;
 }
-/* line 736, new-ui.scss */
+/* line 759, new-ui.scss */
 ul.multitable li.collapsed ul {
   display: none;
 }
-/* line 739, new-ui.scss */
+/* line 762, new-ui.scss */
 ul.multitable li.expanded ul {
   display: visible;
 }
-/* line 743, new-ui.scss */
+/* line 766, new-ui.scss */
 ul.multitable ul {
   padding-left: 0px;
   max-height: 200px;
   overflow: auto;
 }
-/* line 748, new-ui.scss */
+/* line 771, new-ui.scss */
 ul.multitable li.multitable-header {
   border-bottom: 1px solid #eeeeee;
   cursor: pointer;
@@ -902,17 +926,17 @@ ul.multitable li.multitable-header {
   font-weight: bold;
   font-size: 9px;
 }
-/* line 751, new-ui.scss */
+/* line 774, new-ui.scss */
 ul.multitable span.multitable-row {
   display: block;
 }
-/* line 754, new-ui.scss */
+/* line 777, new-ui.scss */
 ul.multitable span.multitable-cell {
   display: inline-block;
   padding-left: 4.8px;
   padding-right: 4.8px;
 }
-/* line 759, new-ui.scss */
+/* line 782, new-ui.scss */
 ul.multitable li.multitable-level-2 {
   cursor: default;
   padding-top: 4.8px;
@@ -934,24 +958,24 @@ ul.multitable li.multitable-level-2:hover {
 /*******************************************************************************
 Derived Components: Metadata multitable
 *******************************************************************************/
-/* line 785, new-ui.scss */
+/* line 808, new-ui.scss */
 li span.metadata-count {
   max-width: 60px;
   min-width: 60px;
 }
 
-/* line 789, new-ui.scss */
+/* line 812, new-ui.scss */
 li span.metadata-value {
   max-width: 120px;
   min-width: 120px;
 }
-/* line 792, new-ui.scss */
+/* line 815, new-ui.scss */
 li span.metadata-value.multitable-cell, li span.metadata-value.multitable-header-cell {
   color: #64839f;
   font-weight: bold;
 }
 
-/* line 797, new-ui.scss */
+/* line 820, new-ui.scss */
 li span.multitable-level-1 {
   font-weight: bold;
   color: #64839f;
@@ -960,11 +984,11 @@ li span.multitable-level-1 {
   margin-bottom: 12.288px;
   text-transform: capitalize;
 }
-/* line 776, new-ui.scss */
+/* line 799, new-ui.scss */
 li span.multitable-level-1 span.action-button-toggle-expand, li span.multitable-level-1 span.action-button-toggle-contract {
   top: 8px;
 }
-/* line 779, new-ui.scss */
+/* line 802, new-ui.scss */
 li span.multitable-level-1 span.metadata-category {
   padding-left: 4.8px;
   padding-right: 4.8px;
@@ -973,7 +997,7 @@ li span.multitable-level-1 span.metadata-category {
 /*******************************************************************************
 Base Components: Landing Page
 *******************************************************************************/
-/* line 808, new-ui.scss */
+/* line 831, new-ui.scss */
 div.landing-page {
   overflow: scroll;
   background-color: #64839f;
@@ -981,7 +1005,7 @@ div.landing-page {
   margin: 4.8px;
   padding: 3px;
 }
-/* line 814, new-ui.scss */
+/* line 837, new-ui.scss */
 div.landing-page div.landingpage-render-target {
   position: absolute;
   top: 109px;
@@ -989,7 +1013,7 @@ div.landing-page div.landingpage-render-target {
   right: 3px;
   bottom: 4.8px;
 }
-/* line 821, new-ui.scss */
+/* line 844, new-ui.scss */
 div.landing-page div.main-header {
   height: 109px;
   width: 100%;
@@ -998,7 +1022,7 @@ div.landing-page div.main-header {
   color: white;
   font-size: 40;
 }
-/* line 828, new-ui.scss */
+/* line 851, new-ui.scss */
 div.landing-page div.main-header h1 {
   margin: 0px;
 }
@@ -1006,7 +1030,7 @@ div.landing-page div.main-header h1 {
 /*******************************************************************************
 Base Components: Menu
 *******************************************************************************/
-/* line 839, new-ui.scss */
+/* line 862, new-ui.scss */
 .menu, .autosuggest-menu {
   padding: 1px;
   border: 2px solid #f7d04a;
@@ -1014,7 +1038,7 @@ Base Components: Menu
 }
 
 /* creates the larger triangle */
-/* line 846, new-ui.scss */
+/* line 869, new-ui.scss */
 .menu:before, .autosuggest-menu:before {
   top: 10px;
   /* controls vertical position */
@@ -1026,7 +1050,7 @@ Base Components: Menu
 }
 
 /* creates the smaller  triangle */
-/* line 855, new-ui.scss */
+/* line 878, new-ui.scss */
 .menu:after, .autosuggest-menu:after {
   top: 16px;
   /* value = (:before top) + (:before border-top) - (:after border-top) */
@@ -1037,13 +1061,13 @@ Base Components: Menu
   border-color: transparent #fff;
 }
 
-/* line 863, new-ui.scss */
+/* line 886, new-ui.scss */
 .menuitem, .autosuggest-menuitem {
   cursor: pointer;
   display: block;
   padding: 7.68px;
 }
-/* line 866, new-ui.scss */
+/* line 889, new-ui.scss */
 .menuitem.hovered, .hovered.autosuggest-menuitem {
   background: #f7d04a;
 }
@@ -1051,7 +1075,7 @@ Base Components: Menu
 /*******************************************************************************
 Derived Components: AutoSuggest Menu
 *******************************************************************************/
-/* line 876, new-ui.scss */
+/* line 899, new-ui.scss */
 .autosuggest-menu {
   border: 0px;
   -webkit-box-shadow: 10px, 0px, 5px;
@@ -1062,14 +1086,14 @@ Derived Components: AutoSuggest Menu
 /*******************************************************************************
 Base Components: Overviews
 *******************************************************************************/
-/* line 890, new-ui.scss */
+/* line 913, new-ui.scss */
 div.overview {
   position: static;
   margin: 4.8px;
   padding: 3px;
   margin-right: 50px;
 }
-/* line 895, new-ui.scss */
+/* line 918, new-ui.scss */
 div.overview div.overview-render-target {
   position: absolute;
   top: 100px;
@@ -1077,7 +1101,7 @@ div.overview div.overview-render-target {
   right: 3px;
   bottom: 4.8px;
 }
-/* line 902, new-ui.scss */
+/* line 925, new-ui.scss */
 div.overview div.overview-header {
   height: 109px;
   width: 100%;
@@ -1086,7 +1110,7 @@ div.overview div.overview-header {
   font-weight: 700;
   color: white;
 }
-/* line 910, new-ui.scss */
+/* line 933, new-ui.scss */
 div.overview div.range-facet {
   position: static !important;
   background-color: transparent;
@@ -1097,23 +1121,23 @@ div.overview div.range-facet div.databox-header {
   color: white;
   background-color: transparent;
 }
-/* line 912, new-ui.scss */
+/* line 935, new-ui.scss */
 div.overview div.range-facet .axis text {
   fill: #eeeeee;
 }
-/* line 915, new-ui.scss */
+/* line 938, new-ui.scss */
 div.overview div.range-facet .axis line, div.overview div.range-facet .axis path {
   stroke: #eeeeee;
 }
-/* line 918, new-ui.scss */
+/* line 941, new-ui.scss */
 div.overview div.range-facet .brush rect.extent {
   fill: #000000;
 }
-/* line 921, new-ui.scss */
+/* line 944, new-ui.scss */
 div.overview div.range-facet .background.bar {
   stroke: #eeeeee;
 }
-/* line 924, new-ui.scss */
+/* line 947, new-ui.scss */
 div.overview div.range-facet .title span {
   color: #eeeeee;
 }
@@ -1121,20 +1145,20 @@ div.overview div.range-facet .title span {
 /*******************************************************************************
 Derived Components: Range Facets
 *******************************************************************************/
-/* line 933, new-ui.scss */
+/* line 956, new-ui.scss */
 div.range-facet {
   height: 100px;
 }
-/* line 936, new-ui.scss */
+/* line 959, new-ui.scss */
 div.range-facet.x-box-item {
   position: static !important;
 }
-/* line 939, new-ui.scss */
+/* line 962, new-ui.scss */
 div.range-facet div.chart.collapsed {
   display: none;
 }
 
-/* line 946, new-ui.scss */
+/* line 969, new-ui.scss */
 div.rangefacets div.range-facet div.databox-header {
   font-weight: bold;
   color: #64839f;
@@ -1143,11 +1167,11 @@ div.rangefacets div.range-facet div.databox-header {
   margin-bottom: 12.288px;
   text-transform: capitalize;
 }
-/* line 776, new-ui.scss */
+/* line 799, new-ui.scss */
 div.rangefacets div.range-facet div.databox-header span.action-button-toggle-expand, div.rangefacets div.range-facet div.databox-header span.action-button-toggle-contract {
   top: 8px;
 }
-/* line 779, new-ui.scss */
+/* line 802, new-ui.scss */
 div.rangefacets div.range-facet div.databox-header span.metadata-category {
   padding-left: 4.8px;
   padding-right: 4.8px;
@@ -1156,7 +1180,7 @@ div.rangefacets div.range-facet div.databox-header span.metadata-category {
 /*******************************************************************************
 Base Components: Sentence List Widget
 *******************************************************************************/
-/* line 955, new-ui.scss */
+/* line 978, new-ui.scss */
 div.sentence {
   font-family: "Bitter";
   line-height: 1.5;
@@ -1164,7 +1188,7 @@ div.sentence {
   margin-bottom: 6px;
 }
 
-/* line 962, new-ui.scss */
+/* line 985, new-ui.scss */
 div.metatag {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   float: left;
@@ -1173,49 +1197,49 @@ div.metatag {
   border: 1px solid #808080;
   cursor: pointer;
 }
-/* line 969, new-ui.scss */
+/* line 992, new-ui.scss */
 div.metatag span {
   display: table-cell;
   padding: 2px 6px;
   color: #808080;
 }
-/* line 973, new-ui.scss */
+/* line 996, new-ui.scss */
 div.metatag span.key {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 11px;
   border-right: 1px solid #808080;
 }
-/* line 979, new-ui.scss */
+/* line 1002, new-ui.scss */
 div.metatag span.value {
   font-size: 12px;
   font-weight: 400;
 }
-/* line 983, new-ui.scss */
+/* line 1006, new-ui.scss */
 div.metatag span.dir {
   display: inline;
 }
-/* line 987, new-ui.scss */
+/* line 1010, new-ui.scss */
 div.metatag:last-child {
   margin-bottom: 36px;
 }
-/* line 990, new-ui.scss */
+/* line 1013, new-ui.scss */
 div.metatag.active {
   background-color: #f7d04a;
 }
-/* line 993, new-ui.scss */
+/* line 1016, new-ui.scss */
 div.metatag.sorting {
   background-color: #fff2fe;
 }
-/* line 995, new-ui.scss */
+/* line 1018, new-ui.scss */
 div.metatag.sorting.lev0 {
   background-color: #ffd8fc;
 }
-/* line 998, new-ui.scss */
+/* line 1021, new-ui.scss */
 div.metatag.sorting.lev1 {
   background-color: #ffe7fd;
 }
-/* line 1001, new-ui.scss */
+/* line 1024, new-ui.scss */
 div.metatag.sorting.lev2 {
   background-color: #fff2fe;
 }
@@ -1223,46 +1247,46 @@ div.metatag.sorting.lev2 {
 /*******************************************************************************
 Visualizations - word frequencies
 *******************************************************************************/
-/* line 1012, new-ui.scss */
+/* line 1035, new-ui.scss */
 .viz-container {
   float: left;
   position: relative;
   margin-top: 12.288px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/* line 1015, new-ui.scss */
+/* line 1038, new-ui.scss */
 .viz-container .timeselect {
   position: absolute;
   top: 7px;
   right: 5px;
 }
-/* line 1021, new-ui.scss */
+/* line 1044, new-ui.scss */
 .viz-container .wordfreq {
   width: 500px;
   height: 400px;
 }
-/* line 1025, new-ui.scss */
+/* line 1048, new-ui.scss */
 .viz-container .wordfreq .nvtooltip {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/* line 1030, new-ui.scss */
+/* line 1053, new-ui.scss */
 .viz-container .wordfreq svg text {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/* line 1036, new-ui.scss */
+/* line 1059, new-ui.scss */
 .viz-container .wordfreq svg .nvd3 .tick line {
   display: none;
 }
-/* line 1043, new-ui.scss */
+/* line 1066, new-ui.scss */
 .viz-container .wordfreq svg .nvd3 .nv-axis.nv-x path.domain {
   stroke-opacity: inherit;
 }
-/* line 1053, new-ui.scss */
+/* line 1076, new-ui.scss */
 .viz-container .wordfreq svg .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
   fill-opacity: 1;
   stroke-opacity: 1;
 }
-/* line 1066, new-ui.scss */
+/* line 1089, new-ui.scss */
 .viz-container div.property {
   font-size: 18px;
   font-weight: 700;
@@ -1275,7 +1299,7 @@ NV.D3 defaults
 /********************
  * HTML CSS
  */
-/* line 1086, new-ui.scss */
+/* line 1109, new-ui.scss */
 .chartWrap {
   margin: 0;
   padding: 0;
@@ -1285,7 +1309,7 @@ NV.D3 defaults
 /********************
   Box shadow and border radius styling
 */
-/* line 1095, new-ui.scss */
+/* line 1118, new-ui.scss */
 .nvtooltip.with-3d-shadow, .with-3d-shadow .nvtooltip {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1298,7 +1322,7 @@ NV.D3 defaults
 /********************
  * TOOLTIP CSS
  */
-/* line 1109, new-ui.scss */
+/* line 1132, new-ui.scss */
 .nvtooltip {
   position: absolute;
   background-color: white;
@@ -1321,7 +1345,7 @@ NV.D3 defaults
 /*Give tooltips that old fade in transition by
     putting a "with-transitions" class on the container div.
 */
-/* line 1134, new-ui.scss */
+/* line 1157, new-ui.scss */
 .nvtooltip.with-transitions, .with-transitions .nvtooltip {
   transition: opacity 250ms linear;
   -moz-transition: opacity 250ms linear;
@@ -1331,13 +1355,13 @@ NV.D3 defaults
   -webkit-transition-delay: 250ms;
 }
 
-/* line 1145, new-ui.scss */
+/* line 1168, new-ui.scss */
 .nvtooltip.x-nvtooltip,
 .nvtooltip.y-nvtooltip {
   padding: 8px;
 }
 
-/* line 1149, new-ui.scss */
+/* line 1172, new-ui.scss */
 .nvtooltip h3 {
   margin: 0;
   padding: 4px 14px;
@@ -1351,43 +1375,43 @@ NV.D3 defaults
   border-radius: 5px 5px 0 0;
 }
 
-/* line 1164, new-ui.scss */
+/* line 1187, new-ui.scss */
 .nvtooltip p {
   margin: 0;
   padding: 5px 14px;
   text-align: center;
 }
 
-/* line 1170, new-ui.scss */
+/* line 1193, new-ui.scss */
 .nvtooltip span {
   display: inline-block;
   margin: 2px 0;
 }
 
-/* line 1175, new-ui.scss */
+/* line 1198, new-ui.scss */
 .nvtooltip table {
   margin: 6px;
   border-spacing: 0;
 }
 
-/* line 1181, new-ui.scss */
+/* line 1204, new-ui.scss */
 .nvtooltip table td {
   padding: 2px 9px 2px 0;
   vertical-align: middle;
 }
 
-/* line 1186, new-ui.scss */
+/* line 1209, new-ui.scss */
 .nvtooltip table td.key {
   font-weight: normal;
 }
 
-/* line 1189, new-ui.scss */
+/* line 1212, new-ui.scss */
 .nvtooltip table td.value {
   text-align: right;
   font-weight: bold;
 }
 
-/* line 1194, new-ui.scss */
+/* line 1217, new-ui.scss */
 .nvtooltip table tr.highlight td {
   padding: 1px 9px 1px 0;
   border-bottom-style: solid;
@@ -1396,20 +1420,20 @@ NV.D3 defaults
   border-top-width: 1px;
 }
 
-/* line 1202, new-ui.scss */
+/* line 1225, new-ui.scss */
 .nvtooltip table td.legend-color-guide div {
   width: 8px;
   height: 8px;
   vertical-align: middle;
 }
 
-/* line 1208, new-ui.scss */
+/* line 1231, new-ui.scss */
 .nvtooltip .footer {
   padding: 3px;
   text-align: center;
 }
 
-/* line 1214, new-ui.scss */
+/* line 1237, new-ui.scss */
 .nvtooltip-pending-removal {
   position: absolute;
   pointer-events: none;
@@ -1418,7 +1442,7 @@ NV.D3 defaults
 /********************
  * SVG CSS
  */
-/* line 1225, new-ui.scss */
+/* line 1248, new-ui.scss */
 svg.nvd3 {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1431,16 +1455,16 @@ svg.nvd3 {
   width: 100%;
   height: 100%;
 }
-/* line 1237, new-ui.scss */
+/* line 1260, new-ui.scss */
 svg.nvd3 text {
   font: normal 12px Arial;
 }
-/* line 1241, new-ui.scss */
+/* line 1264, new-ui.scss */
 svg.nvd3 .title {
   font: bold 14px Arial;
 }
 
-/* line 1248, new-ui.scss */
+/* line 1271, new-ui.scss */
 .nvd3 .nv-background {
   fill: white;
   fill-opacity: 0;
@@ -1449,7 +1473,7 @@ svg.nvd3 .title {
   */
 }
 
-/* line 1256, new-ui.scss */
+/* line 1279, new-ui.scss */
 .nvd3.nv-noData {
   font-size: 18px;
   font-weight: bold;
@@ -1458,7 +1482,7 @@ svg.nvd3 .title {
 /**********
 *  Brush
 */
-/* line 1266, new-ui.scss */
+/* line 1289, new-ui.scss */
 .nv-brush .extent {
   fill-opacity: .125;
   shape-rendering: crispEdges;
@@ -1467,12 +1491,12 @@ svg.nvd3 .title {
 /**********
 *  Legend
 */
-/* line 1277, new-ui.scss */
+/* line 1300, new-ui.scss */
 .nvd3 .nv-legend .nv-series {
   cursor: pointer;
 }
 
-/* line 1281, new-ui.scss */
+/* line 1304, new-ui.scss */
 .nvd3 .nv-legend .disabled circle {
   fill-opacity: 0;
 }
@@ -1480,12 +1504,12 @@ svg.nvd3 .title {
 /**********
 *  Axes
 */
-/* line 1290, new-ui.scss */
+/* line 1313, new-ui.scss */
 .nvd3 .nv-axis {
   pointer-events: none;
 }
 
-/* line 1294, new-ui.scss */
+/* line 1317, new-ui.scss */
 .nvd3 .nv-axis path {
   fill: none;
   stroke: #000;
@@ -1493,35 +1517,35 @@ svg.nvd3 .title {
   shape-rendering: crispEdges;
 }
 
-/* line 1301, new-ui.scss */
+/* line 1324, new-ui.scss */
 .nvd3 .nv-axis path.domain {
   stroke-opacity: .75;
 }
 
-/* line 1305, new-ui.scss */
+/* line 1328, new-ui.scss */
 .nvd3 .nv-axis.nv-x path.domain {
   stroke-opacity: 0;
 }
 
-/* line 1309, new-ui.scss */
+/* line 1332, new-ui.scss */
 .nvd3 .nv-axis line {
   fill: none;
   stroke: #e5e5e5;
   shape-rendering: crispEdges;
 }
 
-/* line 1316, new-ui.scss */
+/* line 1339, new-ui.scss */
 .nvd3 .nv-axis .zero line,
 .nvd3 .nv-axis line.zero {
   stroke-opacity: .75;
 }
 
-/* line 1320, new-ui.scss */
+/* line 1343, new-ui.scss */
 .nvd3 .nv-axis .nv-axisMaxMin text {
   font-weight: bold;
 }
 
-/* line 1326, new-ui.scss */
+/* line 1349, new-ui.scss */
 .nvd3 .x .nv-axis .nv-axisMaxMin text,
 .nvd3 .x2 .nv-axis .nv-axisMaxMin text,
 .nvd3 .x3 .nv-axis .nv-axisMaxMin text {
@@ -1531,7 +1555,7 @@ svg.nvd3 .title {
 /**********
 *  Brush
 */
-/* line 1336, new-ui.scss */
+/* line 1359, new-ui.scss */
 .nv-brush .resize path {
   fill: #eee;
   stroke: #666;
@@ -1540,12 +1564,12 @@ svg.nvd3 .title {
 /**********
 *  Bars
 */
-/* line 1347, new-ui.scss */
+/* line 1370, new-ui.scss */
 .nvd3 .nv-bars .negative rect {
   zfill: brown;
 }
 
-/* line 1351, new-ui.scss */
+/* line 1374, new-ui.scss */
 .nvd3 .nv-bars rect {
   zfill: steelblue;
   fill-opacity: .75;
@@ -1554,22 +1578,22 @@ svg.nvd3 .title {
   -webkit-transition: fill-opacity 250ms linear;
 }
 
-/* line 1360, new-ui.scss */
+/* line 1383, new-ui.scss */
 .nvd3 .nv-bars rect.hover {
   fill-opacity: 1;
 }
 
-/* line 1364, new-ui.scss */
+/* line 1387, new-ui.scss */
 .nvd3 .nv-bars .hover rect {
   fill: lightblue;
 }
 
-/* line 1368, new-ui.scss */
+/* line 1391, new-ui.scss */
 .nvd3 .nv-bars text {
   fill: rgba(0, 0, 0, 0);
 }
 
-/* line 1372, new-ui.scss */
+/* line 1395, new-ui.scss */
 .nvd3 .nv-bars .hover text {
   fill: black;
 }
@@ -1577,7 +1601,7 @@ svg.nvd3 .title {
 /**********
 *  Bars
 */
-/* line 1383, new-ui.scss */
+/* line 1406, new-ui.scss */
 .nvd3 .nv-multibar .nv-groups rect,
 .nvd3 .nv-multibarHorizontal .nv-groups rect,
 .nvd3 .nv-discretebar .nv-groups rect {
@@ -1587,14 +1611,14 @@ svg.nvd3 .title {
   -webkit-transition: fill-opacity 250ms linear;
 }
 
-/* line 1393, new-ui.scss */
+/* line 1416, new-ui.scss */
 .nvd3 .nv-multibar .nv-groups rect:hover,
 .nvd3 .nv-multibarHorizontal .nv-groups rect:hover,
 .nvd3 .nv-discretebar .nv-groups rect:hover {
   fill-opacity: 1;
 }
 
-/* line 1398, new-ui.scss */
+/* line 1421, new-ui.scss */
 .nvd3 .nv-discretebar .nv-groups text,
 .nvd3 .nv-multibarHorizontal .nv-groups text {
   font-weight: bold;
@@ -1605,7 +1629,7 @@ svg.nvd3 .title {
 /***********
 *  Pie Chart
 */
-/* line 1408, new-ui.scss */
+/* line 1431, new-ui.scss */
 .nvd3.nv-pie path {
   stroke-opacity: 0;
   transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
@@ -1613,30 +1637,30 @@ svg.nvd3 .title {
   -webkit-transition: fill-opacity 250ms linear, stroke-width 250ms linear, stroke-opacity 250ms linear;
 }
 
-/* line 1416, new-ui.scss */
+/* line 1439, new-ui.scss */
 .nvd3.nv-pie .nv-slice text {
   stroke: #000;
   stroke-width: 0;
 }
 
-/* line 1421, new-ui.scss */
+/* line 1444, new-ui.scss */
 .nvd3.nv-pie path {
   stroke: #fff;
   stroke-width: 1px;
   stroke-opacity: 1;
 }
 
-/* line 1427, new-ui.scss */
+/* line 1450, new-ui.scss */
 .nvd3.nv-pie .hover path {
   fill-opacity: .7;
 }
 
-/* line 1430, new-ui.scss */
+/* line 1453, new-ui.scss */
 .nvd3.nv-pie .nv-label {
   pointer-events: none;
 }
 
-/* line 1433, new-ui.scss */
+/* line 1456, new-ui.scss */
 .nvd3.nv-pie .nv-label rect {
   fill-opacity: 0;
   stroke-opacity: 0;
@@ -1645,7 +1669,7 @@ svg.nvd3 .title {
 /**********
 * Lines
 */
-/* line 1442, new-ui.scss */
+/* line 1465, new-ui.scss */
 .nvd3 .nv-groups path.nv-line {
   fill: none;
   stroke-width: 1.5px;
@@ -1663,12 +1687,12 @@ svg.nvd3 .title {
   */
 }
 
-/* line 1459, new-ui.scss */
+/* line 1482, new-ui.scss */
 .nvd3 .nv-groups path.nv-line.nv-thin-line {
   stroke-width: 1px;
 }
 
-/* line 1464, new-ui.scss */
+/* line 1487, new-ui.scss */
 .nvd3 .nv-groups path.nv-area {
   stroke: none;
   /*
@@ -1686,7 +1710,7 @@ svg.nvd3 .title {
   */
 }
 
-/* line 1481, new-ui.scss */
+/* line 1504, new-ui.scss */
 .nvd3 .nv-line.hover path {
   stroke-width: 6px;
 }
@@ -1697,26 +1721,26 @@ svg.nvd3 .title {
   stroke-opacity: 0.1;
 }
   */
-/* line 1492, new-ui.scss */
+/* line 1515, new-ui.scss */
 .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
   fill-opacity: 0;
   stroke-opacity: 0;
 }
 
-/* line 1497, new-ui.scss */
+/* line 1520, new-ui.scss */
 .nvd3.nv-scatter.nv-single-point .nv-groups .nv-point {
   fill-opacity: .5 !important;
   stroke-opacity: .5 !important;
 }
 
-/* line 1503, new-ui.scss */
+/* line 1526, new-ui.scss */
 .with-transitions .nvd3 .nv-groups .nv-point {
   transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
   -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
   -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
 }
 
-/* line 1511, new-ui.scss */
+/* line 1534, new-ui.scss */
 .nvd3.nv-scatter .nv-groups .nv-point.hover,
 .nvd3 .nv-groups .nv-point.hover {
   stroke-width: 7px;
@@ -1724,7 +1748,7 @@ svg.nvd3 .title {
   stroke-opacity: .95 !important;
 }
 
-/* line 1518, new-ui.scss */
+/* line 1541, new-ui.scss */
 .nvd3 .nv-point-paths path {
   stroke: #aaa;
   stroke-opacity: 0;
@@ -1732,7 +1756,7 @@ svg.nvd3 .title {
   fill-opacity: 0;
 }
 
-/* line 1527, new-ui.scss */
+/* line 1550, new-ui.scss */
 .nvd3 .nv-indexLine {
   cursor: ew-resize;
 }
@@ -1740,7 +1764,7 @@ svg.nvd3 .title {
 /**********
 * Distribution
 */
-/* line 1536, new-ui.scss */
+/* line 1559, new-ui.scss */
 .nvd3 .nv-distribution {
   pointer-events: none;
 }
@@ -1753,13 +1777,13 @@ svg.nvd3 .title {
   pointer-events: none;
 }
 */
-/* line 1552, new-ui.scss */
+/* line 1575, new-ui.scss */
 .nvd3 .nv-groups .nv-point.hover {
   stroke-width: 20px;
   stroke-opacity: .5;
 }
 
-/* line 1557, new-ui.scss */
+/* line 1580, new-ui.scss */
 .nvd3 .nv-scatter .nv-point.hover {
   fill-opacity: 1;
 }
@@ -1772,7 +1796,7 @@ svg.nvd3 .title {
 /**********
 *  Stacked Area
 */
-/* line 1572, new-ui.scss */
+/* line 1595, new-ui.scss */
 .nvd3.nv-stackedarea path.nv-area {
   fill-opacity: .7;
   /*
@@ -1790,7 +1814,7 @@ svg.nvd3 .title {
   */
 }
 
-/* line 1592, new-ui.scss */
+/* line 1615, new-ui.scss */
 .nvd3.nv-stackedarea path.nv-area.hover {
   fill-opacity: .9;
   /*
@@ -1803,7 +1827,7 @@ svg.nvd3 .title {
   stroke-opacity: 0;
 }
   */
-/* line 1606, new-ui.scss */
+/* line 1629, new-ui.scss */
 .nvd3.nv-stackedarea .nv-groups .nv-point {
   stroke-opacity: 0;
   fill-opacity: 0;
@@ -1818,12 +1842,12 @@ svg.nvd3 .title {
 /**********
 *  Line Plus Bar
 */
-/* line 1624, new-ui.scss */
+/* line 1647, new-ui.scss */
 .nvd3.nv-linePlusBar .nv-bar rect {
   fill-opacity: .75;
 }
 
-/* line 1628, new-ui.scss */
+/* line 1651, new-ui.scss */
 .nvd3.nv-linePlusBar .nv-bar rect:hover {
   fill-opacity: 1;
 }
@@ -1831,73 +1855,73 @@ svg.nvd3 .title {
 /**********
 *  Bullet
 */
-/* line 1637, new-ui.scss */
+/* line 1660, new-ui.scss */
 .nvd3.nv-bullet {
   font: 10px sans-serif;
 }
 
-/* line 1638, new-ui.scss */
+/* line 1661, new-ui.scss */
 .nvd3.nv-bullet .nv-measure {
   fill-opacity: .8;
 }
 
-/* line 1639, new-ui.scss */
+/* line 1662, new-ui.scss */
 .nvd3.nv-bullet .nv-measure:hover {
   fill-opacity: 1;
 }
 
-/* line 1640, new-ui.scss */
+/* line 1663, new-ui.scss */
 .nvd3.nv-bullet .nv-marker {
   stroke: #000;
   stroke-width: 2px;
 }
 
-/* line 1641, new-ui.scss */
+/* line 1664, new-ui.scss */
 .nvd3.nv-bullet .nv-markerTriangle {
   stroke: #000;
   fill: #fff;
   stroke-width: 1.5px;
 }
 
-/* line 1642, new-ui.scss */
+/* line 1665, new-ui.scss */
 .nvd3.nv-bullet .nv-tick line {
   stroke: #666;
   stroke-width: .5px;
 }
 
-/* line 1643, new-ui.scss */
+/* line 1666, new-ui.scss */
 .nvd3.nv-bullet .nv-range.nv-s0 {
   fill: #eee;
 }
 
-/* line 1644, new-ui.scss */
+/* line 1667, new-ui.scss */
 .nvd3.nv-bullet .nv-range.nv-s1 {
   fill: #ddd;
 }
 
-/* line 1645, new-ui.scss */
+/* line 1668, new-ui.scss */
 .nvd3.nv-bullet .nv-range.nv-s2 {
   fill: #ccc;
 }
 
-/* line 1646, new-ui.scss */
+/* line 1669, new-ui.scss */
 .nvd3.nv-bullet .nv-title {
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 1647, new-ui.scss */
+/* line 1670, new-ui.scss */
 .nvd3.nv-bullet .nv-subtitle {
   fill: #999;
 }
 
-/* line 1650, new-ui.scss */
+/* line 1673, new-ui.scss */
 .nvd3.nv-bullet .nv-range {
   fill: #bababa;
   fill-opacity: .4;
 }
 
-/* line 1654, new-ui.scss */
+/* line 1677, new-ui.scss */
 .nvd3.nv-bullet .nv-range:hover {
   fill-opacity: .7;
 }
@@ -1905,35 +1929,35 @@ svg.nvd3 .title {
 /**********
 * Sparkline
 */
-/* line 1664, new-ui.scss */
+/* line 1687, new-ui.scss */
 .nvd3.nv-sparkline path {
   fill: none;
 }
 
-/* line 1668, new-ui.scss */
+/* line 1691, new-ui.scss */
 .nvd3.nv-sparklineplus g.nv-hoverValue {
   pointer-events: none;
 }
 
-/* line 1672, new-ui.scss */
+/* line 1695, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-hoverValue line {
   stroke: #333;
   stroke-width: 1.5px;
 }
 
-/* line 1678, new-ui.scss */
+/* line 1701, new-ui.scss */
 .nvd3.nv-sparklineplus,
 .nvd3.nv-sparklineplus g {
   pointer-events: all;
 }
 
-/* line 1682, new-ui.scss */
+/* line 1705, new-ui.scss */
 .nvd3 .nv-hoverArea {
   fill-opacity: 0;
   stroke-opacity: 0;
 }
 
-/* line 1688, new-ui.scss */
+/* line 1711, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-xValue,
 .nvd3.nv-sparklineplus .nv-yValue {
   /*
@@ -1944,24 +1968,24 @@ svg.nvd3 .title {
   font-weight: normal;
 }
 
-/* line 1697, new-ui.scss */
+/* line 1720, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-yValue {
   stroke: #f66;
 }
 
-/* line 1701, new-ui.scss */
+/* line 1724, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-maxValue {
   stroke: #2ca02c;
   fill: #2ca02c;
 }
 
-/* line 1706, new-ui.scss */
+/* line 1729, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-minValue {
   stroke: #d62728;
   fill: #d62728;
 }
 
-/* line 1711, new-ui.scss */
+/* line 1734, new-ui.scss */
 .nvd3.nv-sparklineplus .nv-currentValue {
   /*
   stroke: #444;
@@ -1974,39 +1998,39 @@ svg.nvd3 .title {
 /**********
 * historical stock
 */
-/* line 1724, new-ui.scss */
+/* line 1747, new-ui.scss */
 .nvd3.nv-ohlcBar .nv-ticks .nv-tick {
   stroke-width: 2px;
 }
 
-/* line 1728, new-ui.scss */
+/* line 1751, new-ui.scss */
 .nvd3.nv-ohlcBar .nv-ticks .nv-tick.hover {
   stroke-width: 4px;
 }
 
-/* line 1732, new-ui.scss */
+/* line 1755, new-ui.scss */
 .nvd3.nv-ohlcBar .nv-ticks .nv-tick.positive {
   stroke: #2ca02c;
 }
 
-/* line 1736, new-ui.scss */
+/* line 1759, new-ui.scss */
 .nvd3.nv-ohlcBar .nv-ticks .nv-tick.negative {
   stroke: #d62728;
 }
 
-/* line 1740, new-ui.scss */
+/* line 1763, new-ui.scss */
 .nvd3.nv-historicalStockChart .nv-axis .nv-axislabel {
   font-weight: bold;
 }
 
-/* line 1744, new-ui.scss */
+/* line 1767, new-ui.scss */
 .nvd3.nv-historicalStockChart .nv-dragTarget {
   fill-opacity: 0;
   stroke: none;
   cursor: move;
 }
 
-/* line 1750, new-ui.scss */
+/* line 1773, new-ui.scss */
 .nvd3 .nv-brush .extent {
   /*
   cursor: ew-resize !important;
@@ -2014,7 +2038,7 @@ svg.nvd3 .title {
   fill-opacity: 0 !important;
 }
 
-/* line 1757, new-ui.scss */
+/* line 1780, new-ui.scss */
 .nvd3 .nv-brushBackground rect {
   stroke: #000;
   stroke-width: .4;
@@ -2028,30 +2052,30 @@ svg.nvd3 .title {
 /**
  * TODO: the following 3 selectors are based on classes used in the example.  I should either make them standard and leave them here, or move to a CSS file not included in the library
  */
-/* line 1774, new-ui.scss */
+/* line 1797, new-ui.scss */
 .nvd3.nv-indentedtree .name {
   margin-left: 5px;
 }
 
-/* line 1778, new-ui.scss */
+/* line 1801, new-ui.scss */
 .nvd3.nv-indentedtree .clickable {
   color: #08C;
   cursor: pointer;
 }
 
-/* line 1783, new-ui.scss */
+/* line 1806, new-ui.scss */
 .nvd3.nv-indentedtree span.clickable:hover {
   color: #005580;
   text-decoration: underline;
 }
 
-/* line 1789, new-ui.scss */
+/* line 1812, new-ui.scss */
 .nvd3.nv-indentedtree .nv-childrenCount {
   display: inline-block;
   margin-left: 5px;
 }
 
-/* line 1794, new-ui.scss */
+/* line 1817, new-ui.scss */
 .nvd3.nv-indentedtree .nv-treeicon {
   cursor: pointer;
   /*
@@ -2059,7 +2083,7 @@ svg.nvd3 .title {
   */
 }
 
-/* line 1801, new-ui.scss */
+/* line 1824, new-ui.scss */
 .nvd3.nv-indentedtree .nv-treeicon.nv-folded {
   cursor: pointer;
   /*
@@ -2070,7 +2094,7 @@ svg.nvd3 .title {
 /**********
 * Parallel Coordinates
 */
-/* line 1812, new-ui.scss */
+/* line 1835, new-ui.scss */
 .nvd3 .background path {
   fill: none;
   stroke: #ccc;
@@ -2078,28 +2102,28 @@ svg.nvd3 .title {
   shape-rendering: crispEdges;
 }
 
-/* line 1819, new-ui.scss */
+/* line 1842, new-ui.scss */
 .nvd3 .foreground path {
   fill: none;
   stroke: steelblue;
   stroke-opacity: .7;
 }
 
-/* line 1825, new-ui.scss */
+/* line 1848, new-ui.scss */
 .nvd3 .brush .extent {
   fill-opacity: .3;
   stroke: #fff;
   shape-rendering: crispEdges;
 }
 
-/* line 1831, new-ui.scss */
+/* line 1854, new-ui.scss */
 .nvd3 .axis line, .axis path {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-/* line 1837, new-ui.scss */
+/* line 1860, new-ui.scss */
 .nvd3 .axis text {
   text-shadow: 0 1px 0 #fff;
 }
@@ -2107,12 +2131,12 @@ svg.nvd3 .title {
 /****
 Interactive Layer
 */
-/* line 1844, new-ui.scss */
+/* line 1867, new-ui.scss */
 .nvd3 .nv-interactiveGuideLine {
   pointer-events: none;
 }
 
-/* line 1847, new-ui.scss */
+/* line 1870, new-ui.scss */
 .nvd3 line.nv-guideline {
   stroke: #ccc;
 }

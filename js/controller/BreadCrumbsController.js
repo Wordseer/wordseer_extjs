@@ -140,13 +140,37 @@ Ext.define('WordSeer.controller.BreadCrumbsController', {
 			// phrase, collection, metadata, else search
 			switch (bctype) {
 				case 'phrase':
-					breadcrumbs_pane.down('.phrases .crumbs').appendChild(domHelper);
+					var target = breadcrumbs_pane.down('.phrases .crumbs');
+					if (target.dom.children.length > 0) {
+						target.appendChild({
+							tag: 'span',
+							cls: 'conj and',
+							html: 'and',
+						});
+					}
+					target.appendChild(domHelper);
 					break;
 				case 'metadata':
-					breadcrumbs_pane.down('.metadata .crumbs').appendChild(domHelper);
+					var target = breadcrumbs_pane.down('.metadata .crumbs');
+					if (target.dom.children.length > 0) {
+						target.appendChild({
+							tag: 'span',
+							cls: 'conj and',
+							html: 'and',
+						});
+					}
+					target.appendChild(domHelper);
 					break;
 				default: // search
-					breadcrumbs_pane.down('.search .crumbs').appendChild(domHelper);
+					var target = breadcrumbs_pane.down('.search .crumbs');
+					if (target.dom.children.length > 0) {
+						target.appendChild({
+							tag: 'span',
+							cls: 'conj or',
+							html: 'or',
+						});
+					}
+					target.appendChild(domHelper);
 					break;
 			}
         });
