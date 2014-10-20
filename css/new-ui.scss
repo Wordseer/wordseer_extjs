@@ -477,13 +477,19 @@ div.breadcrumbs {
             text-align: center;
             font-weight: bold;
             text-transform: uppercase;
-            margin: 9px 8px 0 0;
+            margin: 9px -4px 0 -12px;
+            background-color: #ffffff;
+            position: relative;
+            z-index: 99;
+            border: 1px solid;
 
             &.and {
-                background-color: #bc80bd;
+                color: #984ea3;
+                border-color: #984ea3;
             }
             &.or {
-                background-color: #ccebc5;
+                color: #377eb8;
+                border-color: #377eb8;
             }
         }
     }
